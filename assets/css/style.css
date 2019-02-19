@@ -1,0 +1,33 @@
+.title{
+    color: white;
+    background: orange;
+    height: 50px;
+    width: auto; 
+    text-align: center;
+}
+
+.directions {
+    color: green;
+    background: antiquewhite;
+    height: 300px;
+    width: auto;
+}
+
+#number-to-guess {
+    background: green;
+    color: purple;
+    width: 30%;
+    height: 70px;
+}
+
+.score {
+    background: lightblue;
+    color: green;
+    width: 30%;
+    height: 70px;
+}
+
+.crystal-image {
+  width: 300px;
+  height: 300px;
+}
