@@ -1,33 +1,82 @@
+Body{
+    background: #DFDBE5;
+    background-image: url("assets/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .title{
     color: white;
-    background: orange;
+    background: #4B4F50;
     height: 50px;
     width: auto; 
     text-align: center;
+    font-family: 'Sarina', cursive;
 }
 
 .directions {
-    color: green;
-    background: antiquewhite;
+    color: white;
+    background:  #4B4F50;
     height: 300px;
-    width: auto;
+    width: 33%;
+    overflow: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
-#number-to-guess {
-    background: green;
-    color: purple;
-    width: 30%;
-    height: 70px;
+h2 {
+    color: white;
+    width: 15%; 
+    padding: 10px;
+    float: left;
+}
+
+.turns {
+    background: #4B4F50;
+    color: white;
+    width: 15%;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .score {
-    background: lightblue;
-    color: green;
-    width: 30%;
-    height: 70px;
+    color: white;
+    background:#4B4F50;
+    width: 15%;
+    clear: both;
+
 }
 
-.crystal-image {
-  width: 300px;
-  height: 300px;
+.crystal-blue {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
 }
+
+.crystal-green {
+    width: 200px;
+    height: 200px;
+    margin: 10px; 
+    float: right; 
+}
+
+.crystal-white {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right; 
+
+}
+
+.crystal-purple {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: right;     
+}
+
+
