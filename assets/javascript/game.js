@@ -1,7 +1,7 @@
-  //create variable to hold random number to match
-  var targetNumber = [Math.floor((Math.random() * 100) + 10)];
-  //print number to page
-  $("#objective").text(targetNumber);
+//create variable to hold random number to match
+var targetNumber = [Math.floor((Math.random() * 100) + 10)];
+//print number to page
+$("#objective").text(targetNumber);
 
 //create variables for resulting number, wins, and losses
 var counter = 0;
@@ -25,7 +25,7 @@ for (var i = 0; i < blueOptions.length; i++) {
   //add attribute
   crystalBlue.attr("data-crystalvalue", blueOptions[i]);
   $("#crystals-blue").append(crystalBlue);
-  }
+}
 
 //loop for green crystal
 for (var i = 0; i < greenOptions.length; i++) {
@@ -37,25 +37,27 @@ for (var i = 0; i < greenOptions.length; i++) {
   crystalGreen.attr("src", "assets/images/green.jpg");    
   crystalGreen.attr("data-crystalvalue", greenOptions[i]);
   $("#crystals-green").append(crystalGreen);
-  }
+}
 
 //loop for purple crystal
-  for (var i = 0; i < purpleOptions.length; i++) {
+for (var i = 0; i < purpleOptions.length; i++) {
   var crystalPurple = $("<img>");
-  var crystalWhite = $("<img>");
   crystalPurple.addClass("crystal-purple");
   crystalPurple.attr("src", "assets/images/purple.jpg");
   crystalPurple.attr("data-crystalvalue", purpleOptions[i]);    
   $("#crystals-purple").append(crystalPurple);
-  }
+}
 
 //loop for white crystal
 for (var i = 0; i < whiteOptions.length; i++) {
+  var crystalWhite = $("<img>");
   crystalWhite.addClass("crystal-white");
   crystalWhite.attr("src", "assets/images/white.jpg");
   crystalWhite.attr("data-crystalvalue", whiteOptions[i]);
   $("#crystals-white").append(crystalWhite);
 }
+
+
 
 //onclick function for blue
 $(".crystal-blue").on("click", function() {
@@ -63,16 +65,15 @@ $(".crystal-blue").on("click", function() {
   crystalValue = parseInt(crystalValue);
   counter += crystalValue;
   $("#result").text(counter);
-      if (counter === targetNumber) {
+      if (counter == targetNumber) {
           wins ++;
           $("#wins").text(wins);
-          alert("You win!");
+          $("#alert").text('You Win!');
       }else if (counter >= targetNumber) {
           losses++;
           $("#losses").text(losses);
-          alert("You lose!!");
-      }
-      
+          $("#alert").text('You Lose!');
+      }        
 });
 
 //onclick function for green
@@ -81,14 +82,14 @@ $(".crystal-green").on("click", function() {
   crystalValue = parseInt(crystalValue);
   counter += crystalValue;
   $("#result").text(counter);
-      if (counter === targetNumber) {
+      if (counter == targetNumber) {
           wins ++;
           $("#wins").text(wins);
-          alert("You win!");
+          $("#alert").text('You Win!');
       }else if (counter >= targetNumber) {
           losses++;
           $("#losses").text(losses);
-          alert("You lose!!");
+          $("#alert").text('You Lose!');
       }
 });
 
@@ -98,14 +99,14 @@ $(".crystal-purple").on("click", function() {
   crystalValue = parseInt(crystalValue);
   counter += crystalValue;
   $("#result").text(counter);
-      if (counter === targetNumber) {
+      if (counter == targetNumber) {
           wins ++;
           $("#wins").text(wins);
-          alert("You win!");
+          $("#alert").text('You Win!');
       }else if (counter >= targetNumber) {
           losses++;
           $("#losses").text(losses);
-          alert("You lose!!");
+          $("#alert").text('You Lose!');
       }
 });
 
@@ -115,14 +116,21 @@ $(".crystal-white").on("click", function() {
   crystalValue = parseInt(crystalValue);
   counter += crystalValue;
   $("#result").text(counter);
-      if (counter === targetNumber) {
+      if (counter == targetNumber) {
           wins ++;
           $("#wins").text(wins);
-          alert("You win!");
+          $("#alert").text('You Win!');
       }else if (counter >= targetNumber) {
           losses++;
           $("#losses").text(losses);
-          alert("You lose!!");
+          $("#alert").text('You Lose!');
       }
 });
 
+$(document).ready(function(){
+$("input[type='reset']").on("click", function(e){
+    e.preventDefault(); 
+    $(this).closest('form').get(0).reset(); 
+    
+});
+});

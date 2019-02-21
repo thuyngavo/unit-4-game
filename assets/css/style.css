@@ -6,6 +6,7 @@ Body{
     background-attachment: fixed;
 }
 
+/*style header*/
 .title{
     color: white;
     background: #4B4F50;
@@ -16,24 +17,88 @@ Body{
     font-family: 'Knewave', cursive;
 }
 
-h1, .score{
+/*style conatiner for images*/
+.images{
+    float: right;
+    width: 50%;
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+/*style images*/
+
+.crystal-blue {
+  width: 200px;
+  height: 200px;
+  margin: 40px;
+  float: left;
+}
+
+.crystal-green {
+    width: 200px;
+    height: 200px;
+    margin: 40px; 
+    float: left; 
+}
+
+.crystal-white {
+    width: 200px;
+    height: 200px;
+    margin: 40px; 
+    float: left;
+}
+
+.crystal-purple {
+    width: 200px;
+    height: 200px;
+    margin: 40px; 
+    float: left;    
+}
+
+/*style container for instructions*/
+.directions-container {
+    color: white;
+    background:  #4B4F50;
+    height: 300px;
+    width: 40%;
+    padding: 10px;
+    overflow: scroll;
+}
+
+/*make the scroll bar transparent*/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* style container with wins and losses*/
+.turns-container {
+    background: #4B4F50;
+    color: white;
+    width: 15%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/*syle container with counter and alert*/
+.score-container {
+    color: white;
+    background:#4B4F50;
+    width: 15%;
+    padding: 10px;
+    float: right;
+    position: relative;
+    right: 100px;
+    bottom: 200px;
+}
+
+h1, .result{
     font-family: 'Knewave', cursive;
 }
 
 p, h2, h3, h4{
     font-family: 'Varela Round', sans-serif;
-}
-
-.directions {
-    color: white;
-    background:  #4B4F50;
-    height: 300px;
-    width: 40%;
-    overflow: scroll;
-}
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
 }
 
 h2 {
@@ -42,50 +107,3 @@ h2 {
     padding: 10px;
     float: left;
 }
-
-.turns {
-    background: #4B4F50;
-    color: white;
-    width: 15%;
-    padding: 10px;
-    margin-top: 10px;
-}
-
-.score {
-    color: white;
-    background:#4B4F50;
-    width: 15%;
-    clear: both;
-
-}
-
-.crystal-blue {
-  width: 200px;
-  height: 200px;
-  margin: 10px;
-  position: relative;
-}
-
-.crystal-green {
-    width: 200px;
-    height: 200px;
-    margin: 10px; 
-    float: right; 
-}
-
-.crystal-white {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    float: right; 
-
-}
-
-.crystal-purple {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    float: right;     
-}
-
-
