@@ -1,6 +1,6 @@
 Body{
     background: #DFDBE5;
-    background-image: url("assets/images/background.jpg");
+    background-image: url("https://image.freepik.com/free-photo/close-up-blank-old-concrete-wall_23-2147856094.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -11,15 +11,24 @@ Body{
     background: #4B4F50;
     height: 50px;
     width: auto; 
+    padding: 20px;
     text-align: center;
-    font-family: 'Sarina', cursive;
+    font-family: 'Knewave', cursive;
+}
+
+h1, .score{
+    font-family: 'Knewave', cursive;
+}
+
+p, h2, h3, h4{
+    font-family: 'Varela Round', sans-serif;
 }
 
 .directions {
     color: white;
     background:  #4B4F50;
     height: 300px;
-    width: 33%;
+    width: 40%;
     overflow: scroll;
 }
 ::-webkit-scrollbar {
