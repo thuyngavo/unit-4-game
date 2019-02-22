@@ -76,20 +76,18 @@ Body{
 .turns-container {
     background: #4B4F50;
     color: white;
-    width: 15%;
+    width: 40%;
     padding: 10px;
     margin-top: 10px;
-    float: right;
 }
 
 /*syle container with counter and alert*/
 .score-container {
     color: white;
     background:#4B4F50;
-    width: 15%;
+    width: 40%;
     padding: 10px;
-    float: right;
-
+    float: left;
 }
 
 h1, .result{
@@ -102,7 +100,7 @@ p, h2, h3, h4{
 
 h2 {
     color: white;
-    width: 15%; 
+    width: 40%; 
     padding: 10px;
     float: left;
 }

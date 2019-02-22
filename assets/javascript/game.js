@@ -138,7 +138,7 @@ $(".crystal-white").on("click", function() {
 function reset (){
   counter=0;
   $("#objective").text(targetNumber);
-  targetNumber=[Math.floor((Math.random() * 100) + 10)];
+  targetNumber=[Math.floor((Math.random() * 100) + 20)];
   $("#result").text(counter);
   blueOptions = [Math.floor((Math.random() * 10) + 1)];
   greenOptions = [Math.floor((Math.random() * 10) + 1)];
