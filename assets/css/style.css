@@ -79,6 +79,7 @@ Body{
     width: 15%;
     padding: 10px;
     margin-top: 10px;
+    float: right;
 }
 
 /*syle container with counter and alert*/
@@ -88,9 +89,7 @@ Body{
     width: 15%;
     padding: 10px;
     float: right;
-    position: relative;
-    right: 100px;
-    bottom: 200px;
+
 }
 
 h1, .result{

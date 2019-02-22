@@ -69,10 +69,12 @@ $(".crystal-blue").on("click", function() {
           wins ++;
           $("#wins").text(wins);
           $("#alert").text('You Win!');
+          reset();
       }else if (counter >= targetNumber) {
           losses++;
           $("#losses").text(losses);
           $("#alert").text('You Lose!');
+          reset();
       }        
 });
 
@@ -86,10 +88,12 @@ $(".crystal-green").on("click", function() {
           wins ++;
           $("#wins").text(wins);
           $("#alert").text('You Win!');
+          reset();
       }else if (counter >= targetNumber) {
           losses++;
           $("#losses").text(losses);
           $("#alert").text('You Lose!');
+          reset();
       }
 });
 
@@ -103,10 +107,12 @@ $(".crystal-purple").on("click", function() {
           wins ++;
           $("#wins").text(wins);
           $("#alert").text('You Win!');
+          reset();
       }else if (counter >= targetNumber) {
           losses++;
           $("#losses").text(losses);
           $("#alert").text('You Lose!');
+          reset();
       }
 });
 
@@ -120,17 +126,22 @@ $(".crystal-white").on("click", function() {
           wins ++;
           $("#wins").text(wins);
           $("#alert").text('You Win!');
+          reset();
       }else if (counter >= targetNumber) {
           losses++;
           $("#losses").text(losses);
           $("#alert").text('You Lose!');
+          reset();
       }
 });
 
-$(document).ready(function(){
-$("input[type='reset']").on("click", function(e){
-    e.preventDefault(); 
-    $(this).closest('form').get(0).reset(); 
-    
-});
-});
+function reset (){
+  counter=0;
+  $("#objective").text(targetNumber);
+  targetNumber=[Math.floor((Math.random() * 100) + 10)];
+  $("#result").text(counter);
+  blueOptions = [Math.floor((Math.random() * 10) + 1)];
+  greenOptions = [Math.floor((Math.random() * 10) + 1)];
+  purpleOptions = [Math.floor((Math.random() * 10) + 1)];
+  whiteOptions = [Math.floor((Math.random() * 10) + 1)];
+}
